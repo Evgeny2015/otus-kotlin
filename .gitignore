@@ -1,0 +1,12 @@
+.gradle
+!gradle
+.kotlin
+**/build/
+!**/src/**/build/
+!**/src/**/out/
+
+.idea
+.gigaide
+
+**/*.iml
+
