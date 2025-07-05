@@ -10,5 +10,4 @@ plugins {
 }
 rootProject.name = "kotlin-project"
 
-includeBuild("lessons")
-includeBuild("ok-marketplace-be")
+includeBuild("etl-be")
