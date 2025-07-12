@@ -20,5 +20,17 @@ pluginManagement {
     }
 }
 
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+}
+
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 include(":etl-be-api-v1-jackson")
+include(":etl-be-api-v1-mapper")
+include(":etl-be-api-v2-kmp")
+include(":etl-be-api-v2-mapper")
+
+include(":etl-be-common")
+include(":etl-be-stubs")
 

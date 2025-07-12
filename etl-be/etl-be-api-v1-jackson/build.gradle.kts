@@ -47,7 +47,7 @@ dependencies {
     implementation(libs.jackson.kotlin)
     implementation(libs.jackson.datatype)
 //    testImplementation(kotlin("test-junit"))
-//    testImplementation(projects.okMarketplaceStubs)
+//    testImplementation(projects.etl)
 }
 
 tasks {

@@ -20,6 +20,7 @@ subprojects {
 ext {
     val specDir = layout.projectDirectory.dir("../specs")
     set("spec-v1", specDir.file("specs-etl-v1.yaml").toString())
+    set("spec-v2", specDir.file("specs-etl-v2.yaml").toString())
 }
 
 tasks {
@@ -29,13 +30,4 @@ tasks {
             dependsOn(subprojects.map { it.getTasksByName(tsk, false) })
         }
     }
-//    register("buildImages") {
-//        dependsOn(project("ok-marketplace-app-spring").tasks.getByName("bootBuildImage"))
-//        dependsOn(project("ok-marketplace-app-ktor").tasks.getByName("publishImageToLocalRegistry"))
-//        dependsOn(project("ok-marketplace-app-ktor").tasks.getByName("dockerBuildX64Image"))
-//    }
 }
-
-//kotlin {
-//    jvmToolchain(21)
-//}
